@@ -1,0 +1,23 @@
+[project]
+name = "design"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shamas liaqat", email = "shamasliaqat245@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.102.0",
+    "llmlite>=0.0.4",
+    "reportlab>=4.3.1",
+    "streamlit>=1.42.2",
+]
+
+[project.scripts]
+design = "design:main"
+course = "design.course:main"
+final= "design.streamlit_course:main"
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
